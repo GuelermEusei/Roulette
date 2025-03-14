@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#Mid{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(0, 177, 38);
+}
+
+#SpinButton:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: rgb(0, 177, 38);
+    color: white;
+}
+
+#SpinButton{
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#SpinButton:active{
+    transition: 0.2s;
+    background-color: rgb(0, 95, 21);
+}
+
+#SpinButton.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
